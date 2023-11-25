@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Geist';
+    src: url('/assets/fonts/Geist-Regular.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geist-Bold';
+    src: url('/assets/fonts/Geist-Bold.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geist-Semi-Bold';
+    src: url('/assets/fonts/Geist-SemiBold.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geist-Light';
+    src: url('/assets/fonts/Geist-Light.woff2') format('woff2');
+    font-style: normal;
+}
+
+@mixin big-font {
+    color: $color-white;
+    font-family: "Geist-Semi-Bold", Arial, Helvetica, sans-serif;
+    letter-spacing: -0.181rem;
+}
+
+@mixin small-font {
+    color: $color-grey;
+    font-family: "Geist", Arial, Helvetica, sans-serif;
+    letter-spacing: -0.075px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-black;
+    font-family: "Geist", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: "Geist-Light";
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 6%;
+}
+
+.cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background-color: $color-cyan;
+    border-radius: 49px;
+    padding: 14px 22px;
+    @include small-font;
+    color: $color-black;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 70px;
+
+}
+
+.glow {
+    position: absolute;
+    top: -20px;
+    opacity: .5;
+
+    img {
+        user-select: none;
+    }
+}
+
+
+

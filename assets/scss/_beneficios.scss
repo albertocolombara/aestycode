@@ -1,0 +1,56 @@
+.beneficios {
+    background: linear-gradient(360deg, rgba(31,31,31,1) 0%, rgb(8, 8, 8) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    &__upper {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        text-align: center;
+
+        h2 {
+            @include big-font;
+            font-size: 2.5rem;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+            background: -webkit-linear-gradient(330deg, $color-white, #829493);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            @include small-font;
+        }
+    }
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 120px;
+
+        &-card {
+            padding: 40px 30px;
+            border: 1px $color-cyan solid;
+            border-radius: 10px;
+
+            h3 {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                color: $color-white;
+                font-size: 1.5rem;
+            }
+
+            p {
+                @include small-font;
+                font-weight: lighter;
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
