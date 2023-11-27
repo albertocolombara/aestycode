@@ -1,4 +1,9 @@
-$color-cyan: #D9F6F5;
-$color-black: #1f1f1f;
-$color-white: #f1f1f1;
-$color-grey: #CACACA;
+$color-light: #C4B9E3;
+$color-darkblue: #160a3a;
+$color-black: #080414;
+$color-white: #e8e7eb;
+$color-grey: #b7b3c2;
+$color-lightblue: #A993ED;
+
+$linear-gradient: linear-gradient(360deg, $color-darkblue 0%, $color-black 100%);
+$linear-gradient-reverse: linear-gradient(180deg, $color-darkblue 0%, $color-black 100%);

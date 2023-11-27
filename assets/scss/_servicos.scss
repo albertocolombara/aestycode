@@ -1,0 +1,109 @@
+.servicos {
+    background: $linear-gradient;
+    display: flex;
+    gap: 100px;
+    padding-bottom: 120px;
+    position: relative;
+
+    &__left {
+        flex: 2;
+        z-index: 4;
+
+        h2 {
+            @include big-font;
+            font-size: 2.5rem;
+            letter-spacing: -2px;
+            margin-bottom: 50px;
+
+        }
+
+        &-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+
+            .servicos__card {
+                border-radius: 10px;
+                border: 1px solid $color-light;
+                transition: background-color 1s ease;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                height: 100%;
+
+                &-text {
+                    padding: 30px 30px 15px 30px;
+                }
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-block: 15px;
+                    background-color: $color-white;
+                    font-weight: bold;
+                    border-radius: 0 0 8px 8px;
+                    color: $color-darkblue;
+                    font-size: 1rem;
+                    transition: background-color .5s ease;
+                }
+                
+                a:hover {
+                    background-color: $color-light;
+                }
+
+                h3 {
+                    color: $color-white;
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    margin: 15px 0 25px 0;
+                    @include small-font;
+                    font-weight: lighter;
+                    font-size: .875rem;
+                    line-height: 1.25rem;
+                    color: $color-light;
+                }
+
+
+                &:hover {
+                    background: rgb(255, 255, 255);
+                }
+
+                &:hover h3, &:hover p, &:hover a {
+                    color: $color-darkblue;
+                }
+                
+            }
+        }
+    }
+
+    &__right {
+        flex: 1;
+        padding: 50px;
+        background: linear-gradient(45deg, $color-darkblue 0%, $color-black 100%);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        h3 {
+            color: $color-white;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        span {
+            @include small-font;
+            color: $color-white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &::before {
+                content: url("/assets/images/Icon_Mini.svg");
+            }
+        }
+    }
+}

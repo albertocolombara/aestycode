@@ -11,7 +11,7 @@ header {
 }
 
 .hero {
-    background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgb(8, 8, 8) 100%);
+    background: $linear-gradient-reverse;
     width: 100%;
     height: calc(100vh - 112px);
     display: flex;
@@ -24,16 +24,14 @@ header {
     h1 {
         font-size: 4rem;
         @include big-font;
-        background: -webkit-linear-gradient(300deg, $color-white, #829493);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        z-index: 4;
     }
 
     p {
         margin-top: 30px;
         margin-bottom: 30px;
         @include small-font;
+        z-index: 4;
     }
 
     .arrow-down {

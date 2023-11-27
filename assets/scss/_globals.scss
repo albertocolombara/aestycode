@@ -26,10 +26,14 @@
     color: $color-white;
     font-family: "Geist-Semi-Bold", Arial, Helvetica, sans-serif;
     letter-spacing: -0.181rem;
+    background: -webkit-linear-gradient(330deg, $color-white, $color-lightblue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @mixin small-font {
-    color: $color-grey;
+    color: $color-light;
     font-family: "Geist", Arial, Helvetica, sans-serif;
     letter-spacing: -0.075px;
 }
@@ -43,7 +47,7 @@
 }
 
 body {
-    background-color: $color-black;
+    background-color: $color-darkblue;
     font-family: "Geist", sans-serif;
 }
 
@@ -70,28 +74,51 @@ a {
     justify-content: center;
     align-items: center;
     gap: 6px;
-    background-color: $color-cyan;
+    background-color: $color-light;
     border-radius: 49px;
     padding: 14px 22px;
     @include small-font;
-    color: $color-black;
+    color: $color-darkblue;
+    z-index: 4;
+}
+
+.cta-btn-services {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    @include small-font;
+    font-size: 14px;
+    color: $color-white;
 }
 
 .arrow-down {
     position: absolute;
     bottom: 70px;
-
 }
 
 .glow {
     position: absolute;
     top: -20px;
     opacity: .5;
+    z-index: 0;
 
     img {
         user-select: none;
     }
 }
 
+.icon-gradiente {
+    z-index: 0;
+}
 
+.wrapper {
+    background-color: #CACACA;
+    padding-block: 80px;
 
+    span {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        color: $color-darkblue;
+    }
+}
