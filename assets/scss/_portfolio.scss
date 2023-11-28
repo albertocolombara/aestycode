@@ -1,0 +1,23 @@
+.portfolio {
+    background: $linear-gradient;
+    padding-block: 120px;
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        &:hover img:not(:hover) {
+            opacity: .4;
+        }
+
+        img {
+            transition: transform 1s ease, opacity 1s ease;
+            border-radius: 10px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -1,5 +1,8 @@
 .beneficios {
-    background: $linear-gradient;
+    background: linear-gradient(to bottom, $color-black, #160a3ac4),url("/assets/images/wp-stars.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;

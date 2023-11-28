@@ -26,7 +26,7 @@
     color: $color-white;
     font-family: "Geist-Semi-Bold", Arial, Helvetica, sans-serif;
     letter-spacing: -0.181rem;
-    background: -webkit-linear-gradient(330deg, $color-white, $color-lightblue);
+    background: -webkit-linear-gradient(300deg, $color-white, $color-lightblue);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -44,6 +44,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -63,6 +64,8 @@ a {
     text-decoration: none;
 }
 
+
+
 .container {
     max-width: 1920px;
     margin: 0 auto;
@@ -80,6 +83,11 @@ a {
     @include small-font;
     color: $color-darkblue;
     z-index: 4;
+    transition: opacity .5s ease;
+}
+
+.cta-btn:hover {
+    opacity: .5;
 }
 
 .cta-btn-services {
@@ -89,11 +97,6 @@ a {
     @include small-font;
     font-size: 14px;
     color: $color-white;
-}
-
-.arrow-down {
-    position: absolute;
-    bottom: 70px;
 }
 
 .glow {

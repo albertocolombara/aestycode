@@ -1,7 +1,7 @@
 .diferenciais {
-    background: $linear-gradient-reverse;
+    background: linear-gradient(to top, $color-black, #160a3ac4),url("/assets/images/wp-stars.jpg");
     padding-top: 120px;
-    padding-bottom: 200px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
