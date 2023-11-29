@@ -1,5 +1,6 @@
 @keyframes floating {
     100% {
+        opacity: 0;
         transform: translateY(10px);
     }
 }
@@ -15,11 +16,60 @@
 
 @keyframes falling {
     0% {
-        transform: translateX(-100%);
+        top: 0;
+
+    }
+
+    50% {
+        opacity: .4;
     }
 
     100% {
-        opacity: .5;
-        transform: translateX(100%);
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes falling-down {
+    0% {
+        right: 0;
+        top: 20%;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        right: 100%;
+        top:70%;
+        opacity: 0;
+    }
+}
+
+@keyframes shining {
+    0% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: .7;
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        transform: translateY(-15%);
+    }
+
+    100% {
+        transform: translateY(0%);
     }
 }

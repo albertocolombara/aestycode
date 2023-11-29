@@ -1,0 +1,56 @@
+.faq {
+    background: linear-gradient(to bottom, $color-black, #160a3ac4),url("/assets/images/wp-stars.jpg");
+    background-size: cover;
+    padding-bottom: 120px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2 {
+        @include big-font;
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+        margin-bottom: 40px;
+    }
+
+    &-lista {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        
+        dt {
+            display: flex;
+            gap: 7px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: $color-light;
+            font-size: 1.375rem;
+            cursor: pointer;
+
+            &::before {
+                content: url("/assets/images/Icon_Mini.svg");
+            }
+
+            &.active::before {
+                animation: rotate .4s forwards ease;
+            }
+        }
+
+        dd {
+            display: none;
+            @include small-font;
+            color: $color-grey;
+            font-size: .875rem;
+            line-height: 22px;
+
+            &.active {
+                display: block;
+                animation: fade-down .4s forwards ease;
+            }
+        }
+    }
+}

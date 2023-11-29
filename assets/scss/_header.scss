@@ -21,16 +21,39 @@ header {
     width: 100%;
     position: relative;
 
-    .starfall {
+    .planet {
         content: "";
         display: block;
-        width: 7px;
-        height: 7px;
+        width: 32px;
+        height: 32px;
+        background-color: $color-light;
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px rgba(110, 110, 110, 0.7);
+        position: absolute;
+    }
+
+    .starfall {
+        opacity: 0;
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
         background-color: $color-light;
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(255,255,255, .7);
         position: absolute;
-        animation: falling infinite 5s ease;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 1px;
+            background: linear-gradient(to right, $color-light 0%, #d3caec00 100%);
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(255,255,255, .6);
+            opacity: .5;
+            transform: rotate3d(0, 0, 1, 353deg);
+        }
     }
 
     &__content {
@@ -40,48 +63,42 @@ header {
         flex-direction: column;
         text-align: center;
         width: 100%;
-        height: calc(100vh - 90px);
-
-        .const {
-            position: absolute;
-            top: 250px;
-            right: 250px;
-            display: flex;
-            align-items: center;
-            gap: 5px;   
-            transform: rotate3d(0, 0, 1, 60deg);
-            transform-origin: 50% 50%;
-            animation: pulse 7s infinite ease;
+        height: 100vh;
             
-            .line {
-                content: "";
-                display: block;
-                width: 50px;
-                height: 1px;
-                background-color: $color-light;
-                border-radius: 10px;
-                box-shadow: 2px 2px 10px rgba(255,255,255, .6);
-                opacity: .5;
+        // .line {
+        //     content: "";
+        //     display: block;
+        //     width: 50px;
+        //     height: 1px;
+        //     background-color: $color-light;
+        //     border-radius: 10px;
+        //     box-shadow: 2px 2px 10px rgba(255,255,255, .6);
+        //     opacity: .5;
+        // }
 
-            }
-
-            .star {
-                content: "";
-                display: block;
-                width: 7px;
-                height: 7px;
-                background-color: $color-light;
-                border-radius: 10px;
-                box-shadow: 2px 2px 10px rgba(255,255,255, .7);
-            }
+        .star {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 7px;
+            height: 7px;
+            background-color: $color-light;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(255,255,255, .7);
         }
-
-
 
         h1 {
             font-size: 4rem;
             @include big-font;
             z-index: 4;
+            position: relative;
+
+            &::after {
+                content: url("/assets/images/Icon_Mini.svg");
+                position: absolute;
+                top: 50px;
+                animation: shining infinite 1s alternate;
+            }
         }
     
         p {
@@ -93,7 +110,7 @@ header {
     }
 
     .arrow-down {
-        animation: floating 2s infinite alternate ease-out;
+        animation: floating 2s infinite alternate ease;
     }
 
     .logo-floating {

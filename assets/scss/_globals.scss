@@ -47,6 +47,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: $color-darkblue;
     font-family: "Geist", sans-serif;
@@ -79,9 +83,10 @@ a {
     gap: 6px;
     background-color: $color-light;
     border-radius: 49px;
-    padding: 14px 22px;
+    padding: 10px 18px;
     @include small-font;
-    color: $color-darkblue;
+    font-size: .875rem;
+    color: $color-black;
     z-index: 4;
     transition: opacity .5s ease;
 }
