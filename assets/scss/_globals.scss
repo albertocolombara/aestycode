@@ -54,6 +54,8 @@ html {
 body {
     background-color: $color-darkblue;
     font-family: "Geist", sans-serif;
+    overflow-x: hidden;
+
 }
 
 img {
@@ -68,12 +70,14 @@ a {
     text-decoration: none;
 }
 
-
-
 .container {
     max-width: 1920px;
     margin: 0 auto;
     padding: 0 6%;
+}
+
+.arrow-down {
+    bottom: 50px;
 }
 
 .cta-btn {
@@ -83,16 +87,36 @@ a {
     gap: 6px;
     background-color: $color-light;
     border-radius: 49px;
-    padding: 10px 18px;
+    padding: 12px 20px;
     @include small-font;
     font-size: .875rem;
     color: $color-black;
     z-index: 4;
-    transition: opacity .5s ease;
+    transition: box-shadow .5s ease;
+
+    &:hover {
+        box-shadow: 1px 1px 10px 4px rgba(169, 147, 237, 0.51);
+    }
 }
 
-.cta-btn:hover {
-    opacity: .5;
+.cta-btn__mobile {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $color-light;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    z-index: 4;
+    transition: box-shadow .5s ease;
+    box-shadow: 1px 1px 10px 2px rgba(169, 147, 237, 0.51);
+
+    &:hover {
+        box-shadow: 1px 1px 10px 4px rgba(169, 147, 237, 0.51);
+    }
 }
 
 .cta-btn-services {
@@ -102,17 +126,6 @@ a {
     @include small-font;
     font-size: 14px;
     color: $color-white;
-}
-
-.glow {
-    position: absolute;
-    top: -20px;
-    opacity: .5;
-    z-index: 0;
-
-    img {
-        user-select: none;
-    }
 }
 
 .icon-gradiente {
@@ -129,4 +142,40 @@ a {
         font-size: 24px;
         color: $color-darkblue;
     }
+}
+
+.starfall {
+    opacity: 0;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: $color-light;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(255,255,255, .7);
+    position: absolute;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 1px;
+        background: linear-gradient(to right, $color-light 0%, #d3caec00 100%);
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(255,255,255, .6);
+        opacity: .5;
+        transform: rotate3d(0, 0, 1, 353deg);
+    }
+}
+
+.title-2 {
+    @include big-font;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+}
+
+.title-1 {
+    @include big-font;
+    font-size: 4rem;
+    line-height: 68px;
 }

@@ -1,0 +1,184 @@
+@media (max-width: 960px) {
+    .container {
+        padding: 0 3%;
+    }
+
+    .beneficios {
+    
+        &__bottom {
+            gap: 20px;
+        }
+    }
+
+    .diferenciais {
+    
+        &__bottom {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            row-gap: 50px;
+        }
+    }
+
+    .portfolio {
+    
+        &__bottom {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+    }
+
+    .servicos {
+    
+        .container {
+            gap: 20px;
+        }
+    
+        &__left {
+    
+            &-cards {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .title-1 {
+        font-size: 3.25rem;
+        line-height: 54px;
+        letter-spacing: -1.7px;
+    }
+
+    .beneficios {
+    
+        &__bottom {
+            grid-template-columns: repeat(2 , 1fr);
+    
+            &-card {
+
+
+                &:last-child {
+                    grid-column: -3 / -1;
+                }
+            }
+        }
+    }
+
+    .servicos {
+    
+        .container {
+            flex-direction: column;
+            gap: 30px;
+        }
+    
+        &__left {
+    
+            &-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        &__right {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .faq {
+    
+        &-lista {
+            width: 100%;
+            
+        }
+    }    
+}
+
+@media (max-width: 576px) {
+    .title-1 {
+        font-size: 2.5rem;
+        line-height: 46px;
+    }
+
+    .title-2 {
+        font-size: 2rem;
+    }
+
+    header {
+        height: 75px;
+
+        nav {
+            justify-content: center;
+
+            .cta-btn__desktop {
+                display: none;
+            }
+        }
+    }
+
+    .cta-btn__mobile {
+        display: flex;
+    }
+
+    .icon-gradiente {
+        display: none;
+    }
+
+    .arrow-down {
+        bottom: 80px;
+    }
+
+    .faq, .servicos {
+        padding-top: 0;
+    }
+
+    .beneficios {
+    
+        &__bottom {
+            grid-template-columns: 1fr;
+    
+            &-card {
+
+                &:last-child {
+                    grid-column: auto;
+                }
+            }
+        }
+    }
+
+    .diferenciais {
+    
+        &__bottom {
+            grid-template-columns: 1fr;
+            row-gap: 50px;
+        }
+    }
+
+    .portfolio {
+    
+        &__bottom {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+
+    .servicos {
+    
+        .container {
+            flex-direction: column;
+            gap: 30px;
+        }
+    
+        &__left {
+    
+            h2 {
+                text-align: center;
+            }
+
+            &-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    }
+}

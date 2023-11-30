@@ -1,0 +1,10 @@
+footer {
+    background-color: $color-black;
+    padding-block: 40px;
+    
+    .footer-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

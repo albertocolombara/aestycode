@@ -32,8 +32,12 @@
 
 @keyframes falling-down {
     0% {
-        right: 0;
+        right: 12%;
         top: 20%;
+        opacity: 0;
+    }
+
+    25% {
         opacity: 1;
     }
 
