@@ -4,8 +4,9 @@
 
     &__bottom {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 20px;
 
         &:hover img:not(:hover) {
             opacity: .4;
@@ -14,9 +15,11 @@
         img {
             transition: transform 1s ease, opacity 1s ease;
             border-radius: 10px;
+            object-fit: cover;
+            width: 100%;
 
             &:hover {
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
         }
     }
