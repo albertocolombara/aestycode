@@ -29,8 +29,9 @@
 
         &-card {
             padding: 30px;
-            border: 1px solid $color-light;
-            border-radius: 10px;
+            border-radius: 12px;
+            border: 1.502px solid var(--stroke, rgba(157, 144, 200, 0.49));
+            background: rgba(175, 148, 255, 0.05);
             position: relative;
 
             h3 {

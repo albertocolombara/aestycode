@@ -36,8 +36,7 @@
         &__left {
     
             &-cards {
-                grid-template-columns: repeat(1, 1fr);
-                gap: 20px;
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     }
@@ -66,22 +65,21 @@
     }
 
     .servicos {
-    
+    background: url("/assets/images/wrapper-servicos-mobile.jpg");
+
         .container {
             flex-direction: column;
             gap: 30px;
         }
     
-        &__left {
-    
-            &-cards {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
 
         &__right {
             align-items: center;
             text-align: center;
+        }
+
+        &__bottom {
+            flex-direction: column;
         }
     }
 
@@ -128,8 +126,15 @@
         bottom: 80px;
     }
 
-    .faq, .servicos {
+    .servicos {
         padding-top: 0;
+
+        &__bottom {
+
+            ul {
+                gap: 10px;
+            }
+        }
     }
 
     .beneficios {
@@ -179,6 +184,24 @@
                 grid-template-columns: 1fr;
             }
         }
+    }
 
+    footer {
+        padding-block: 20px;
+        .footer-menu {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .servicos {
+    
+        &__bottom {
+            ul {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
     }
 }
