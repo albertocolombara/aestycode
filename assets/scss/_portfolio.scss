@@ -23,4 +23,59 @@
             }
         }
     }
+
+    &__list {
+        margin-block: 90px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: scroll;
+        position: relative;
+
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &::before, &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 12%;
+            height: 100%;
+            top: 0;
+            z-index: 2;
+        }
+
+        &::before {
+            left: 0;
+            background: linear-gradient(to left, transparent, $color-darkblue);
+        }
+
+        &::after {
+            right: 0;
+            background: linear-gradient(to right, transparent, $color-darkblue);
+        }
+
+        &-itens {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            animation: slide 35s linear infinite;
+        }
+
+        &-item {
+            width: 200px;
+            background-color: #2C375F22;
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            border-radius: 12px;
+            margin: 0 5px;
+        }
+    }
 }
