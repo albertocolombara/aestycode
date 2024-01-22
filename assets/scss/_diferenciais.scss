@@ -1,6 +1,7 @@
 .diferenciais {
-    background: linear-gradient(to top, $color-black, #160a3ac4),url("/assets/images/wp-stars.jpg");
+    background: linear-gradient(to top, $color-black, #160a3ae0),url("/assets/images/wp-stars.jpg");
     background-size: cover;
+    background-position: center;
     padding-top: 120px;
     padding-bottom: 60px;
     display: flex;
@@ -10,7 +11,7 @@
 
     &__upper {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 75px;
 
         h2 {
             margin-bottom: 20px;
@@ -35,7 +36,7 @@
             position: relative;
 
             h3 {
-                margin-top: 30px;
+                margin-top: 20px;
                 margin-bottom: 20px;
                 color: $color-white;
                 font-size: 1.375rem;
@@ -45,7 +46,7 @@
                 position: absolute;
                 transform: translateX(-50%);
                 left: 50%;
-                top: -37px;
+                top: -43px;
             }
 
             p {

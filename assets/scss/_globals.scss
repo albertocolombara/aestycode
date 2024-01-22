@@ -99,6 +99,16 @@ a {
     }
 }
 
+.cta-btn__desktop,
+.cta-btn__mobile {
+    animation: pulseBorder 2s infinite alternate;
+    transition: opacity .5s ease-in-out;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
 .cta-btn__mobile {
     display: none;
     justify-content: center;
@@ -130,18 +140,6 @@ a {
 
 .icon-gradiente {
     z-index: 0;
-}
-
-.wrapper {
-    background-color: #CACACA;
-    padding-block: 80px;
-
-    span {
-        display: block;
-        text-align: center;
-        font-size: 24px;
-        color: $color-darkblue;
-    }
 }
 
 .starfall {

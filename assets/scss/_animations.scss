@@ -14,6 +14,36 @@
     }
 }
 
+@keyframes pulseBorder {
+    0% {
+        box-shadow: none;
+    }
+
+    100% { 
+        box-shadow: 1px 1px 14px 1px rgb(169, 147, 237);
+    }
+}
+
+@keyframes movement {
+    0% {
+        right: 0;
+        transform: rotate(0);
+        transform-origin: top;
+        opacity: 0;
+        visibility: visible;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        right: 100%;
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
 @keyframes falling {
     0% {
         top: 0;

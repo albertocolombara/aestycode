@@ -64,8 +64,34 @@
         }
     }
 
+    .wrapper {
+        padding-block: 90px;
+
+        &__text {
+            flex: 2;
+
+            span {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__star {
+
+            .planet {
+                top: 30px;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
     .servicos {
-    background: url("/assets/images/wrapper-servicos-mobile.jpg");
+        background: url("/assets/images/wrapper-servicos-mobile.jpg");
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
 
         .container {
             flex-direction: column;
@@ -78,8 +104,29 @@
             text-align: center;
         }
 
-        &__bottom {
+    }
+
+    .adicionais {
+        padding-block: 60px;
+        .container {
             flex-direction: column;
+            gap: 20px;
+        }
+
+        &__text {
+
+            span {
+                width: 100%;
+            }
+        }
+
+        &__cards {
+            gap: 10px;
+
+            &-card {
+                padding: 20px;
+
+            }
         }
     }
 
@@ -99,7 +146,7 @@
     }
 
     .title-2 {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 
     header {
@@ -126,17 +173,6 @@
         bottom: 80px;
     }
 
-    .servicos {
-        padding-top: 0;
-
-        &__bottom {
-
-            ul {
-                gap: 10px;
-            }
-        }
-    }
-
     .beneficios {
     
         &__bottom {
@@ -151,11 +187,29 @@
         }
     }
 
+    .wrapper {
+
+        &__text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+
+        &__star {
+            display: none;
+        }
+    }
+
     .diferenciais {
     
         &__bottom {
             grid-template-columns: 1fr;
-            row-gap: 50px;
+            row-gap: 30px;
         }
     }
 
@@ -168,26 +222,50 @@
     }
 
     .servicos {
+        padding-top: 0;
     
         .container {
             flex-direction: column;
             gap: 30px;
         }
     
-        &__left {
+        &__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .servicos__card {
+
+                &:first-child {
+                    h4 {
+                        font-size: 2.5rem;
+                    }
+
+                    &::before {
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+    .adicionais {
+        &__text {
     
             h2 {
-                text-align: center;
+                font-size: 2.5rem;
             }
-
-            &-cards {
-                grid-template-columns: 1fr;
+    
+            span {
+                font-size: 1.25rem;
+                margin-bottom: 15px;
             }
         }
     }
 
     footer {
         padding-block: 20px;
+        
         .footer-menu {
             flex-direction: column;
             gap: 40px;
@@ -196,12 +274,10 @@
 }
 
 @media (max-width: 400px) {
-    .servicos {
-    
-        &__bottom {
-            ul {
-                grid-template-columns: repeat(1, 1fr);
-            }
+    .adicionais {
+
+        &__cards {
+            grid-template-columns: 1fr;
         }
     }
 }

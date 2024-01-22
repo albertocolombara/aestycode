@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    padding-top: 120px;
+    padding-top: 0;
     padding-bottom: 120px;
     position: relative;
 
@@ -13,71 +13,76 @@
         gap: 50px;
     }
 
-    &__left {
-        flex: 2;
-        z-index: 4;
+    svg {
+        animation: shining alternate infinite 1s;
+    }
 
-        h2 {
-            margin-bottom: 60px;
-            text-align: center;
-        }
+    h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
 
-        &-cards {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4;
+        gap: 20px;
 
-            .servicos__card {
-                border-radius: 12px;
-                border: 1.502px solid var(--stroke, rgba(157, 144, 200, 0.49));
-                background: rgba(175, 148, 255, 0.11);
-                transition: background-color 1s ease;
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
-                height: 100%;
+        .servicos__card {
+            border-radius: 12px;
+            border: 1.502px solid var(--stroke, rgba(157, 144, 200, 0.49));
+            background: linear-gradient(to top, rgba(175, 148, 255, 0.07), transparent);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            transition: all .7s ease-in-out;
+            
+            &:hover {
+                background: rgba(175, 148, 255, 0.07);
+            }
 
-                &:first-child {
-                    position: relative;
+            &:first-child {
+                position: relative;
+                grid-row: 1/4;
+
+                ul {
+                    display: flex;
+                    gap: 10px;
+                    flex-direction: column;
+                    margin-bottom: 30px;
+                }
+
+                li {
+                    list-style: none;
+                    color: $color-white;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
 
                     &::before {
-                        display: block;
-                        content: url("/assets/images/Icon_Aesty_White_Shiny.svg");
-                        position: absolute;
-                        top: -44px;
-                        left: -44px;
+                        content: url(/assets/images/Icon_Mini.svg);
                     }
                 }
 
-
-
-                &-text {
-                    padding: 30px 30px 35px 30px;
+                .servicos__card-text {
+                    padding: 40px;
                 }
 
-                a {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding-block: 15px;
-                    background-color: $color-white;
-                    border-radius: 0 0 8px 8px;
-                    color: $color-black;
-                    font-size: 1rem;
-                    transition: background-color 1s ease;
-                }
-                
-                a:hover {
-                    background-color: $color-light;
+                h4 {
+                    @include big-font;
+                    font-size: 3rem;
+                    color: #160a3a60;
                 }
 
-                h3 {
-                    color: $color-white;
-                    font-size: 1.5rem;
+                span {
+                    display: inline-block;
+                    margin-top: 5px;
+                    color: $color-lightblue;
                 }
 
                 p {
-                    margin: 15px 0 15px 0;
+                    margin: 15px 0 25px 0;
                     @include small-font;
                     font-weight: lighter;
                     font-size: 1rem;
@@ -85,86 +90,37 @@
                     color: $color-light;
                 }
 
-
-                &:hover {
-                    background: rgb(255, 255, 255);
-                }
-
-                &:hover h3, &:hover p, &:hover a {
-                    color: $color-darkblue;
-                }        
-            }
-        }
-    }
-
-    &__right {
-        flex: 1;
-        padding: 50px;
-        background-color: #160a3a60;
-        backdrop-filter: blur(1.9px);
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        z-index: 4;
-        display: none;
-
-        h3 {
-            color: $color-white;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-
-        span {
-            @include small-font;
-            color: $color-white;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-
-            &::before {
-                content: url("/assets/images/Icon_Mini.svg");
-            }
-        }
-    }
-
-    &__bottom {
-        margin-top: 120px;
-        display: flex;
-        align-items: center;
-        gap: 30px;
-
-        h2 {
-            flex: 1.5;
-            text-align: center;
-        }
-
-        ul {
-            flex: 1;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            gap: 20px;
-
-
-            li {
-                list-style: none;
-                display: flex;
-                gap: 8px;
-                align-items: center;
-                padding: 15px 25px;
-                border-radius: 12px;
-                border: 1.502px solid var(--stroke, rgba(157, 144, 200, 0.49));
-                background: rgba(175, 148, 255, 0.07);
-                color: $color-white;
-                @include small-font;
-
-
                 &::before {
-                    content: url("/assets/images/Icon_Mini.svg");
+                    display: block;
+                    content: url("/assets/images/Icon_Aesty_White_Shiny.svg");
+                    position: absolute;
+                    top: -59px;
+                    left: -58px;
                 }
             }
-        }
 
+            &-text {
+                padding: 30px;
+            }
+
+            a {
+                color: $color-lightblue;
+            }
+        
+
+            h4 {
+                color: $color-white;
+                font-size: 1.5rem;
+            }
+
+            p {
+                margin-top: 15px;
+                @include small-font;
+                font-weight: lighter;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: $color-light;
+            }
+        }
     }
 }

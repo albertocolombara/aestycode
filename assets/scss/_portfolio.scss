@@ -1,6 +1,11 @@
 .portfolio {
     background: $linear-gradient;
-    padding-block: 90px;
+    padding-top: 60px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
 
     &__bottom {
         display: grid;
@@ -10,6 +15,7 @@
 
         &:hover img:not(:hover) {
             opacity: .4;
+            filter: blur(1px);
         }
 
         img {
@@ -33,6 +39,9 @@
         overflow-x: scroll;
         position: relative;
 
+        &:hover &-itens{
+            animation-play-state: paused;
+        }
 
         &::-webkit-scrollbar {
             display: none;
@@ -42,7 +51,7 @@
             position: absolute;
             content: "";
             display: block;
-            width: 12%;
+            width: 200px;
             height: 100%;
             top: 0;
             z-index: 2;
@@ -63,7 +72,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-            animation: slide 35s linear infinite;
+            animation: slide 30s linear infinite;
         }
 
         &-item {
