@@ -1,7 +1,15 @@
 @keyframes floating {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .75;
+    }
+
     100% {
         opacity: 0;
-        transform: translateY(10px);
+        bottom: 20px;
     }
 }
 
@@ -97,6 +105,13 @@
         transform: rotateY(180deg);
     }
 }
+
+@keyframes rotateX {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 @keyframes fade-down {
     0% {
