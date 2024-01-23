@@ -32,13 +32,6 @@
         .container {
             gap: 20px;
         }
-    
-        &__left {
-    
-            &-cards {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
     }
 }
 
@@ -88,7 +81,7 @@
     }
 
     .servicos {
-        background: url("/assets/images/wrapper-servicos-mobile.jpg");
+        background: url("/assets/images/wrapper-servicos-mobile.webp");
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
@@ -97,13 +90,6 @@
             flex-direction: column;
             gap: 30px;
         }
-    
-
-        &__right {
-            align-items: center;
-            text-align: center;
-        }
-
     }
 
     .adicionais {
@@ -224,11 +210,6 @@
     .servicos {
         padding-top: 0;
     
-        .container {
-            flex-direction: column;
-            gap: 30px;
-        }
-    
         &__grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -236,7 +217,7 @@
             .servicos__card {
 
                 &:first-child {
-                    h4 {
+                    h3 {
                         font-size: 2.5rem;
                     }
 

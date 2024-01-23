@@ -1,5 +1,5 @@
 .servicos {
-    background: url("/assets/images/wrapper-servicos.jpg");
+    background: url("/assets/images/wrapper-servicos.webp");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
                     padding: 40px;
                 }
 
-                h4 {
+                h3 {
                     @include big-font;
                     font-size: 3rem;
                     color: #160a3a60;
@@ -108,7 +108,7 @@
             }
         
 
-            h4 {
+            h3 {
                 color: $color-white;
                 font-size: 1.5rem;
             }
