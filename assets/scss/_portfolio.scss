@@ -2,10 +2,15 @@
     background: $linear-gradient;
     padding-top: 60px;
 
-    h2 {
+    &__upper {
         text-align: center;
-        margin-bottom: 40px;
+
+        h2 {
+            margin-bottom: 40px;
+        }
     }
+
+
 
     &__bottom {
         display: grid;

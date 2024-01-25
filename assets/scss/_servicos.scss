@@ -13,14 +13,19 @@
         gap: 50px;
     }
 
-    svg {
-        animation: shining alternate infinite 1s;
+    &__upper {
+        text-align: center;
+
+        svg {
+            animation: shining alternate infinite 1s;
+        }
+    
+        h2 {
+            margin-bottom: 60px;
+        }
+
     }
 
-    h2 {
-        text-align: center;
-        margin-bottom: 60px;
-    }
 
     &__grid {
         display: grid;

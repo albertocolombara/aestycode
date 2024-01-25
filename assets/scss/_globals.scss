@@ -19,7 +19,7 @@
 @font-face {
     font-family: 'Geist-Light';
     src: url('/assets/fonts/Geist-Light.woff2') format('woff2');
-    font-style: lighter;
+    font-style: normal;
 }
 
 @mixin big-font {
@@ -30,6 +30,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom: 10px;
 }
 
 @mixin small-font {
@@ -60,10 +61,6 @@ body {
 
 img {
     max-width: 100%;
-}
-
-h1 {
-    font-family: "Geist-Light";
 }
 
 a {
@@ -168,14 +165,30 @@ a {
 
 .title-2 {
     @include big-font;
-    font-size: 2.5rem;
+    font-size: 4rem;
     letter-spacing: -2px;
+    line-height: 70px;
 }
 
 .title-1 {
     @include big-font;
     font-size: 4rem;
     line-height: 68px;
+}
+
+.before-title {
+    background-color: #988ac51e;
+    border: 1px solid #988ac559;
+    color: #988ac5c0;
+    padding: 12px 30px;
+    border-radius: 58px;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
 }
 
 .lgpd {
