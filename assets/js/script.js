@@ -16,3 +16,11 @@ window.addEventListener("scroll", () => {
         header.classList.remove("scrolled");
     }
 });
+
+window.addEventListener("touchmove", () => {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
