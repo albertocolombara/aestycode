@@ -1,7 +1,7 @@
 .faq {
-    background: linear-gradient(to bottom, $color-black, #160a3ac4),url("/assets/images/wp-stars.jpg");
+    background: linear-gradient(to bottom, $color-black, $color-darkblue),url("/assets/images/wp-stars.jpg");
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 40px;
 
     .container {
@@ -57,47 +57,6 @@
             &.active {
                 display: block;
                 animation: fade-down .4s forwards ease;
-            }
-        }
-    }
-
-    .cta-wrapper {
-        padding-block: 120px;
-        position: relative;
-    
-        &__content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-    
-            span {
-                text-align: center;
-                margin-bottom: 20px;
-                position: relative;
-                display: flex;
-                flex-direction: column-reverse;
-
-            &::after {
-                content: url("/assets/images/Icon_Mini.svg");
-                animation: shining infinite 1s alternate;
-            }
-            }
-    
-            a {
-                @include small-font;
-                color: $color-light;
-                border: 1px solid $color-light;
-                border-radius: 20px;
-                padding: 16px 24px;
-                display: flex;
-                align-items: center;
-                gap: 4px;
-                transition: box-shadow .5s ease;
-    
-                &:hover {
-                    box-shadow: 1px 1px 10px 4px rgba(169, 147, 237, 0.51);
-                }
             }
         }
     }

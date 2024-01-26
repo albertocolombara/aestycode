@@ -1,16 +1,15 @@
 .portfolio {
     background: $linear-gradient;
     padding-top: 60px;
+    position: relative;
 
     &__upper {
         text-align: center;
 
         h2 {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
     }
-
-
 
     &__bottom {
         display: grid;

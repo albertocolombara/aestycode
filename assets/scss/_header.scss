@@ -154,16 +154,4 @@ header {
         left: 80px;
         bottom: 120px;
     }
-
-    .blur {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 404px;
-        height: 257px;
-        border-radius: 504px;
-        background: rgba(255, 255, 255, 0.47);
-        filter: blur(250px);
-        z-index: 101;
-    }
 }
