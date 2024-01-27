@@ -28,7 +28,7 @@
     letter-spacing: -0.181rem;
     background: -moz-linear-gradient(300deg, $color-white, $color-lightblue);
     background: -webkit-linear-gradient(300deg, $color-white, $color-lightblue);
-    background: linear-gradient(300deg, $color-white, $color-lightblue);
+    background: linear-gradient(180deg, $color-white, $color-lightblue);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -45,7 +45,6 @@
     background-color: $color-darkblue; /* Cor de fundo da seleção */
     color: $color-lightblue; /* Cor do texto selecionado */
     -webkit-text-fill-color: $color-lightblue;
-
 }
 
 *,
@@ -77,7 +76,7 @@ a {
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 6%;
 }
@@ -176,6 +175,7 @@ a {
     @include big-font;
     font-size: 4.5rem;
     line-height: 72px;
+    letter-spacing: -7%;
 }
 
 .before-title {
