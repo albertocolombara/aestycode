@@ -1,0 +1,44 @@
+.quemsomos {
+    padding-block: 180px;
+    background-color: $color-black;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: -95px;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: blur(1.5px);
+        -webkit-filter: blur(1.5px);
+        
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__left, &__right {
+        flex: 1;
+    }
+
+    h2 {
+        background: linear-gradient(100deg, $color-white, $color-black);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3.5rem;
+        line-height: 62px;
+        opacity: .4;
+        font-family: "Geist-Light";
+    }
+
+    p {
+        @include small-font;
+        color: $color-light;
+        line-height: 1.5rem;
+        width: 80%;
+    }
+}

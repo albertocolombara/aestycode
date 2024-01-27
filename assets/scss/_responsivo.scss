@@ -24,6 +24,14 @@
         }
     }
 
+    .quemsomos {
+
+        h2 {
+            font-size: 2.5rem;
+            line-height: 48px;
+        }
+    }
+
     .diferenciais {
     
         &__bottom {
@@ -102,6 +110,22 @@
                     grid-column: -3 / -1;
                 }
             }
+        }
+    }
+
+    .quemsomos {
+        padding-block: 120px;
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 50px;
+        }
+
+        p {
+            width: 100%;
         }
     }
 
@@ -195,6 +219,7 @@
     .floating-star {
         width: 60px;
         filter: blur(3px);
+        -webkit-filter: blur(3px);
     }
 
     .title-2 {
@@ -304,11 +329,19 @@
     }
 
     .diferenciais {
-        padding-block: 90px;
-    
+        padding-block: 120px;
+
         &__bottom {
             grid-template-columns: 1fr;
             text-align: center;
+
+            &-card {
+                margin: 0 20px;
+
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
 

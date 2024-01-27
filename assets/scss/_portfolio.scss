@@ -1,6 +1,6 @@
 .portfolio {
     background: $linear-gradient;
-    padding-top: 60px;
+    padding-top: 120px;
     position: relative;
 
     &__upper {
@@ -20,6 +20,7 @@
         &:hover img:not(:hover) {
             opacity: .4;
             filter: blur(1px);
+            -webkit-filter: blur(1px);
         }
 
         img {

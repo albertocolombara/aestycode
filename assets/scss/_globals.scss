@@ -26,7 +26,9 @@
     color: $color-white;
     font-family: "Geist-Semi-Bold", Arial, Helvetica, sans-serif;
     letter-spacing: -0.181rem;
+    background: -moz-linear-gradient(300deg, $color-white, $color-lightblue);
     background: -webkit-linear-gradient(300deg, $color-white, $color-lightblue);
+    background: linear-gradient(300deg, $color-white, $color-lightblue);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -37,6 +39,13 @@
     color: $color-light;
     font-family: "Geist", Arial, Helvetica, sans-serif;
     letter-spacing: -0.075px;
+}
+
+::selection {
+    background-color: $color-darkblue; /* Cor de fundo da seleção */
+    color: $color-lightblue; /* Cor do texto selecionado */
+    -webkit-text-fill-color: $color-lightblue;
+
 }
 
 *,
@@ -223,6 +232,7 @@ a {
     border-radius: 9999px;
     background-color: #ff5f20b9;
     filter: blur(300px);
+    -webkit-filter: blur(300px);
     z-index: 101;
 }
 
@@ -246,5 +256,7 @@ a {
     transform: rotate(-25deg);
     transform-origin: top;
     filter: blur(7px);
+    -webkit-filter: blur(7px);
     animation: floating 4s alternate infinite;
 }
+
