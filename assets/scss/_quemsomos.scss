@@ -1,6 +1,6 @@
 .quemsomos {
     padding-block: 180px;
-    background-color: $color-black;
+    background-color: $color-darkblue;
     position: relative;
 
     img {
@@ -10,7 +10,6 @@
         transform: translateX(-50%);
         filter: blur(1.5px);
         -webkit-filter: blur(1.5px);
-        
     }
     
     .container {
@@ -25,7 +24,7 @@
     }
 
     h2 {
-        background: linear-gradient(100deg, $color-white, $color-black);
+        background: linear-gradient(100deg, $color-white, $color-darkblue);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -37,8 +36,8 @@
 
     p {
         @include small-font;
-        color: $color-light;
+        color: $color-grey;
         line-height: 1.5rem;
-        width: 80%;
+        font-size: 1rem;
     }
 }

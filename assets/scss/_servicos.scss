@@ -1,5 +1,5 @@
 .servicos {
-    background: linear-gradient(to top, $color-black, $color-darkblue);
+    background: linear-gradient(to top, $color-darkblue, $color-darkblue);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@
                 }
 
                 h3 {
-                    @include big-font;
+                    @include title-font;
                     font-size: 3rem;
                     color: #160a3a60;
                 }
@@ -90,7 +90,7 @@
                 span {
                     display: inline-block;
                     margin-top: 5px;
-                    color: $color-lightblue;
+                    color: $color-violet;
                 }
 
                 p {
@@ -99,7 +99,7 @@
                     font-weight: lighter;
                     font-size: 1rem;
                     line-height: 1.5rem;
-                    color: $color-light;
+                    color: $color-white;
                 }
 
                 &::before {
@@ -116,7 +116,7 @@
             }
 
             a {
-                color: $color-lightblue;
+                color: $color-violet;
             }
         
 
@@ -131,7 +131,7 @@
                 font-weight: lighter;
                 font-size: 1rem;
                 line-height: 1.5rem;
-                color: $color-light;
+                color: $color-white;
             }
         }
     }

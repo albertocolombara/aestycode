@@ -1,5 +1,5 @@
 .beneficios {
-    background: linear-gradient(to bottom, $color-black, #160a3ae0);
+    background: linear-gradient(to bottom, $color-darkblue, #160a3ae0);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,19 +25,22 @@
 
     &__bottom {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1px 1fr 1px 1fr;
         justify-content: center;
         gap: 40px;
         margin-bottom: 150px;
 
-        &-card {
-            padding: 40px 30px;
-            border: 1px $color-light solid;
-            border-radius: 10px;
-            border-radius: 12px;
-            border: 1.502px solid var(--stroke, rgba(157, 144, 200, 0.49));
-            background: linear-gradient(to top, rgba(175, 148, 255, 0.07), transparent);
+        .line {
+            width: 1px;
+            height: 100%;
+            content: "";
+            display: block;
+            background: linear-gradient(360deg, rgba(3, 0, 20, 0.00) -2.46%, $color-white 50.82%, rgba(3, 0, 20, 0.00) 100%);
+        }
 
+        &-card {
+            padding: 40px 0;
+           
             h3 {
                 font-family: "Geist-Light", Arial, Helvetica, sans-serif;
                 margin-top: 10px;
@@ -51,6 +54,7 @@
                 font-weight: lighter;
                 font-size: 1rem;
                 line-height: 1.5rem;
+                color: $color-grey;
             }
         }
     }

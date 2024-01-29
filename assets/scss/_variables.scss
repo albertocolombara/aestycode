@@ -1,9 +1,10 @@
-$color-light: #D3CAEC;
-$color-darkblue: #0A0026;
-$color-black: #080414;
-$color-white: #e8e7eb;
-$color-grey: #b7b3c2;
-$color-lightblue: #B499FF;
+$color-darkblue: #030014;
+$color-blue: #0A0026;
+// $color-black: #080414;
+$color-white: #E8E7EB;
+$color-grey: #CACACA;
+$color-violet: #B499FF;
+$color-whiteviolet: #C4AFFF;
 
-$linear-gradient: linear-gradient(360deg, $color-darkblue 0%, $color-black 100%);
-$linear-gradient-reverse: linear-gradient(180deg, $color-darkblue 0%, $color-black 100%);
+$linear-gradient: linear-gradient(360deg, $color-darkblue 0%, $color-blue 100%);
+$linear-gradient-reverse: linear-gradient(180deg, $color-darkblue 0%, $color-blue 100%);
