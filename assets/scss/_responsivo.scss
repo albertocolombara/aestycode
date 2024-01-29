@@ -8,10 +8,13 @@
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1280px) {
     .container {
         padding: 0 3%;
     }
+}
+
+@media (max-width: 960px) {
 
     .hero {
 
@@ -124,7 +127,7 @@
     }
 
     .quemsomos {
-        padding-block: 120px;
+        padding-block: 100px;
 
         .container {
             flex-direction: column;
@@ -316,7 +319,7 @@
     }
 
     .diferenciais {
-        padding-block: 120px;
+        padding-block: 100px;
 
         &__bottom {
             grid-template-columns: 1fr;
