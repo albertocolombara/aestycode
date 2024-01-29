@@ -52,8 +52,8 @@
             display: none;
             @include small-font;
             color: $color-grey;
-            font-size: .875rem;
-            line-height: 22px;
+            font-size: 1rem;
+            line-height: 24px;
 
             &.active {
                 display: block;
