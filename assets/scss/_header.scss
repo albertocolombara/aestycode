@@ -131,7 +131,7 @@ header {
         transform: translateX(-50%) rotate(290deg) ;
         filter: blur(5.5px);
         -webkit-filter: blur(5.5px);
-        animation: floating-planet 3s alternate infinite ease-in-out;
+        // animation: floating-planet 3s alternate infinite ease-in-out;
 
         &::before {
             content: "";

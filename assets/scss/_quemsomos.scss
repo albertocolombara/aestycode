@@ -12,6 +12,12 @@
         -webkit-filter: blur(1.5px);
     }
     
+    .before-title {
+        background-color: $color-darkblue;
+        color: $color-white;
+        border: 1px solid $color-white;
+    }
+
     .container {
         display: flex;
         justify-content: space-around;

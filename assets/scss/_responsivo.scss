@@ -8,7 +8,7 @@
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1366px) {
     .container {
         padding: 0 3%;
     }
@@ -81,15 +81,6 @@
 
         &__grid {
             grid-template-columns: repeat(2, 1fr);
-
-            .servicos__card {
-
-                .cta-btn-outline {
-                    width: calc(100% - 40px);
-                    text-align: center;
-                }
-            }
-
         }
     }
 }
@@ -258,6 +249,16 @@
             
         }
     }    
+
+    .cta-wrapper {
+    
+        &__content {
+            
+            span {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -398,6 +399,13 @@
         .footer-menu {
             flex-direction: column;
             gap: 40px;
+        }
+    }
+
+    .copy {
+        span {
+            display: inline-block;
+            text-align: center;
         }
     }
 }

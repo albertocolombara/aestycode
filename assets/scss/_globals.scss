@@ -2,24 +2,31 @@
     font-family: 'Geist';
     src: url('/assets/fonts/Geist-Regular.woff2') format('woff2');
     font-style: normal;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Geist-Bold';
     src: url('/assets/fonts/Geist-Bold.woff2') format('woff2');
     font-style: normal;
+    font-weight: normal;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Geist-Semi-Bold';
     src: url('/assets/fonts/Geist-SemiBold.woff2') format('woff2');
     font-style: normal;
+    font-weight: normal;
+    font-display: block;
 }
 
 @font-face {
     font-family: 'Geist-Light';
     src: url('/assets/fonts/Geist-Light.woff2') format('woff2');
     font-style: normal;
+    font-weight: normal;
+    font-display: block;
 }
 
 @mixin title-font {
@@ -60,9 +67,8 @@ html {
 
 body {
     background-color: $color-darkblue;
-    font-family: "Geist", sans-serif;
+    font-family: "Geist", Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-
 }
 
 img {
@@ -71,6 +77,11 @@ img {
 
 a {
     text-decoration: none;
+}
+
+h1, h2, h3, h4, span {
+    font-style: normal;
+    font-weight: normal;
 }
 
 .container {
@@ -162,7 +173,8 @@ a {
 .title-2 {
     @include title-font;
     font-size: 3.375rem;
-    letter-spacing: -5%;
+    font-style: normal;
+    font-weight: normal;
     line-height: 58px;
     width: 70%;
     margin: 0 auto;
@@ -171,8 +183,9 @@ a {
 .title-1 {
     @include title-font;
     font-size: 4.5rem;
+    font-style: normal;
+    font-weight: normal;
     line-height: 72px;
-    letter-spacing: -7%;
 }
 
 .before-title {
