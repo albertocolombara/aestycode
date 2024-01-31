@@ -19,6 +19,39 @@
     }
 }
 
+@keyframes slide-left {
+    0% {
+        left: 0;
+        opacity: .3;
+    }
+
+    20% {
+        opacity: .7;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .7;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: .7;
+    }
+
+    100% {
+        left: 90%;
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
 @keyframes floating-planet {
     100% {
         margin-top: 15px;
