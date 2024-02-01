@@ -16,8 +16,8 @@ header {
     }
 
     &.scrolled {
-        backdrop-filter: blur(2px);
         -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
         background-color: #08021a70;
     }
 }
@@ -26,6 +26,11 @@ header {
     background: $linear-gradient;
     width: 100%;
     position: relative;
+    height: 100vh;
+
+    .container {
+        height: 100%;
+    }
 
     .planet {
         content: "";
@@ -55,7 +60,7 @@ header {
         align-items: center;
         width: 70%;
         margin: 0 auto;
-        height: 100vh;
+        height: 100%;
 
         &-left {
             flex: 1.4;
@@ -95,9 +100,7 @@ header {
         }
 
         &-right {
-            flex: 1;
-
-            
+            flex: 1; 
         }
     }
 
@@ -129,8 +132,8 @@ header {
         top: -50%;
         left: 50%;
         transform: translateX(-50%) rotate(290deg) ;
-        filter: blur(5.5px);
         -webkit-filter: blur(5.5px);
+        filter: blur(5.5px);
         // animation: floating-planet 3s alternate infinite ease-in-out;
 
         &::before {

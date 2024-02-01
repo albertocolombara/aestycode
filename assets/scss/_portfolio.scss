@@ -11,8 +11,8 @@
 
         // &:hover img:not(:hover) {
         //     opacity: .4;
-        //     filter: blur(1px);
         //     -webkit-filter: blur(1px);
+        //     filter: blur(1px);
         // }
 
         &-heading {
@@ -90,6 +90,9 @@
                 letter-spacing: normal;
                 font-family: "Geist-Light", Arial, Helvetica, sans-serif;
                 margin-bottom: 20px;
+                padding: 20px;
+                background-color: #c4afff11;
+                border-radius: 6px;
             }
         }
     }
