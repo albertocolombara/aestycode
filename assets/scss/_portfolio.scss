@@ -105,6 +105,7 @@
         align-items: flex-start;
         overflow-x: scroll;
         position: relative;
+        pointer-events: none;
 
         &:hover &-itens{
             animation-play-state: paused;

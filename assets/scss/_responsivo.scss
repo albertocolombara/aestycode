@@ -86,9 +86,9 @@
 }
 
 @media (max-width: 767px) {
-    .arrow-down {
-        display: none;
-    }
+    // .arrow-down {
+    //     display: none;
+    // }
 
     .title-1 {
         font-size: 3.25rem;
@@ -291,6 +291,7 @@
     }
 
     .hero {
+        height: 75vh;
 
         .planet, .star {
             display: none;
@@ -309,13 +310,36 @@
         }
     }
 
+    .after-hero {
+
+        &__itens {
+            
+            &-item {
+                
+                width: 304px;
+                min-width: 304px;
+                height: 356px;
+
+                img {
+                object-fit:contain;
+
+                }
+            }
+        }
+
+        &::before, &::after {
+            width: 100px;
+            opacity: .5;
+        }
+    }
+
     .cta-btn__mobile {
         display: flex;
     }
 
-    .arrow-down {
-        bottom: 80px;
-    }
+    // .arrow-down {
+    //     bottom: 80px;
+    // }
 
     .beneficios {
 

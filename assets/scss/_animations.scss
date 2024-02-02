@@ -175,3 +175,12 @@
         transform: translate(-1600px, 0);
     }
 }
+
+@keyframes slide-showcase {
+    0% {
+        transform: translate(-250px, 0);
+    }
+    100% {
+        transform: translate(-2300px, 0);
+    }
+}

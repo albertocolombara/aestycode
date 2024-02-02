@@ -26,7 +26,7 @@ header {
     background: $linear-gradient;
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 85vh;
 
     .container {
         height: 100%;
@@ -104,14 +104,14 @@ header {
         }
     }
 
-    .arrow-down {
-        animation: arrow-floating 2s infinite ease;
-        position: absolute;
-        bottom: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        user-select: none;
-    }
+    // .arrow-down {
+    //     animation: arrow-floating 2s infinite ease;
+    //     position: absolute;
+    //     bottom: 50px;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     user-select: none;
+    // }
 
     .logo-floating {
         position: absolute;
@@ -168,3 +168,4 @@ header {
         }
     }
 }
+
